@@ -1,4 +1,6 @@
 class user {
+  //static
+  static fullName = '정지은';
   constructor(name,age,number){
     this.name = name;
     this.age = age;
@@ -29,6 +31,8 @@ class Experiment{
   //class 내부에서만 접근가능, 값 변경
 }
 
-const Experiment = new Experiment();
-console.log(experiment.publicfield);
-console.log(experiment.privateField);
+const experiment = new Experiment();
+console.log(experiment.publicfield); //2
+console.log(experiment.privateField); //undfined
+
+console.log(user.fullName);
